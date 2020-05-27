@@ -1,0 +1,157 @@
+body
+{
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+#entete
+{
+	background: url(1.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-attachment: fixed;
+}
+
+#titre
+{
+	font-size: 75px;
+	font-family: 'Teko', sans-serif;
+	margin-bottom: 20px;
+	color: #3a5424;
+	border: black 2px solid;
+	background-color: black;
+	padding: 0px 25px;
+	border-radius: 15px;
+	opacity: 0.9;
+
+}
+#lien
+{
+	font-size: 25px;
+	text-decoration: none;
+	border: 2px #3a5424 solid;
+	border-radius: 10px;
+	padding: 1px 6px;
+	color: black;
+	background-color: #3a5424;
+	opacity: 0.9;
+}
+
+#lien:hover
+{
+	color: #3a5424;
+	background-color: black;
+	border-color: black;
+}
+
+.banniere
+{	
+	background-color: black;
+	padding: 20px;
+	position: sticky;
+	top: 0;	
+}
+
+.banniere a
+{
+	color: #858282;
+	text-decoration: none;
+	padding: 18px 8px;
+}
+
+.banniere a:hover
+{
+	color: white;
+	border-bottom: white 2px solid;
+	border-top: white 2px solid;
+}
+
+#block2
+{
+	text-align: center;
+	background: url(4.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 40px;	
+}
+
+.grp
+{
+	display: flex;
+	justify-content: center;
+}
+
+.img
+{
+	width: 300px;
+	height: 196px;
+	transition: 0.3s;
+	cursor: pointer;
+	border-radius: 5px;
+	margin: 20px;
+}
+.img:hover
+{
+	transform: scale(1.2);
+	filter: grayscale(70%);
+}
+
+footer
+{
+	background-color: black;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	color: #858282;
+}
+
+.block3
+{
+	background-color: #a5a3b1;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+/***********************MEDIA************************/
+
+@media (max-width: 742px){
+
+	.banniere{
+		text-align: center;
+	}
+
+	.banniere a{
+		padding: 18px 25px;
+	}
+
+	#titre{
+		font-size: 55px;
+	}
+
+	#lien{
+		font-size: 20px;
+	}
+
+	.block3{
+		font-size: 15px;
+	}
+
+}
+
+
+@media (max-width: 1051px){
+
+	.grp{
+		flex-direction: column;
+		align-items: center;
+	}
+
+}
